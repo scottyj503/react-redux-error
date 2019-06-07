@@ -12,3 +12,8 @@ If you remove react-redux and add version 6.0.1 the code works as expected.
 
 I put the connect object in the src/features/Test/index.js
 
+
+** UPDATE **
+
+
+I was able to trace the problem to webpack.  Webpack adds script tag with the bundle.js into the index.html automatically. My issue was because I was adding the bundle.js into index.html explicitly, which used to work fine before hooks.

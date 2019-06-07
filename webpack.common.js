@@ -6,24 +6,12 @@ module.exports = {
   entry: { main: './index.js' },
 
   output: {
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash].js',
-    path: path.resolve(__dirname, 'dist')
+    // filename: 'index.min.js'
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
-      },
-      {
-       test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {}
-          }
-        ]
-      },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -38,7 +26,6 @@ module.exports = {
       hash: true,
       template: './index.html',
       filename: 'index.html',
-      title: 'Production'
     }),
   ],
 }
