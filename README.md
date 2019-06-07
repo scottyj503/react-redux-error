@@ -1,6 +1,6 @@
-There appears to be an error (Invalid hook call) if I use react-redux version 7.0.3 in conjuction with using the connect object.
+There appears to be an error (Invalid hook call) if I use react-redux version 7.0.3 in conjunction with using the connect object.
 
-If I use version 6.0.1 I don't recieve the same error and works as expected.
+If I use version 6.0.1 I don't receive the same error and works as expected.
 
 Expected behavior: No errors. 
 
